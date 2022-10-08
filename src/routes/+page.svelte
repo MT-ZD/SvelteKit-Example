@@ -19,6 +19,9 @@
 				<div class="pause">
 					<img src="/pause.svg" alt="" />
 				</div>
+				<div class="stop">
+					<img src="/stop.svg" alt="" />
+				</div>
 			</div>
 		</div>
 	</div>
@@ -99,8 +102,8 @@
 		opacity: 0.6;
 	}
 
-	.play {
-		margin-right: 16px;
+	.pause {
+		margin: 0 16px;
 	}
 
 	@keyframes spin {
