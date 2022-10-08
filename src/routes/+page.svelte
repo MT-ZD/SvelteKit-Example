@@ -36,6 +36,10 @@
 		display: flex;
 	}
 
+	.spinning {
+		animation: spin linear infinite 5s;
+	}
+
 	.info {
 		margin-left: 24px;
 		flex: 1;
@@ -97,5 +101,14 @@
 
 	.play {
 		margin-right: 16px;
+	}
+
+	@keyframes spin {
+		from {
+			transform: rotate(0deg);
+		}
+		to {
+			transform: rotate(360deg);
+		}
 	}
 </style>
