@@ -1,5 +1,5 @@
 <div class="player">
-	<img src="/disk.svg" alt="" />
+	<img src="/disk.svg" class="disk" alt="" />
 
 	<div class="info">
 		<div class="title">Beat Three</div>
@@ -39,8 +39,13 @@
 		display: flex;
 	}
 
+	.disk {
+		animation: spin linear infinite 5s forwards;
+		animation-play-state: paused;
+	}
+
 	.spinning {
-		animation: spin linear infinite 5s;
+		animation-play-state: running;
 	}
 
 	.info {
